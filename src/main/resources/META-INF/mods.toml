@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+license="GPL v3"
+[[mods]]
+modId="gsuit"
+version="1.0.0"
+displayName="Ghillie Suit"
+logoFile="logo.png"
+credits=""
+authors="Team Fractal, Tapio"
+description='''
+
+'''
+[[dependencies.gsuit]]
+    modId="forge"
+    mandatory=true
+    versionRange="[38,)"
+    ordering="NONE"
+    side="BOTH"
