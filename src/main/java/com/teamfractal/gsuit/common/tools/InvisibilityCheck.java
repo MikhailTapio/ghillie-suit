@@ -14,6 +14,6 @@ public class InvisibilityCheck {
                         ((entity.getFeetBlockState().is(Blocks.TALL_GRASS) && GSCommonConfig.TALL_GRASS.get())
                                 || (entity.getFeetBlockState().is(Blocks.SUGAR_CANE) && GSCommonConfig.SUGAR_CANE.get())
                                 || (entity.getFeetBlockState().is(Blocks.BAMBOO)) && GSCommonConfig.BAMBOO.get())
-                        || entity.isUnderWater());
+                        || entity.isUnderWater() && GSCommonConfig.UNDERWATER.get());
     }
 }
