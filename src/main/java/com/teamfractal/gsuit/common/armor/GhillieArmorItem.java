@@ -19,7 +19,7 @@ public class GhillieArmorItem extends ArmorItem implements IForgeItem {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type)
     {
-        return (!InvisibilityCheck.check(entity) && !GSCommonConfig.INVISIBILITY_ARMOR.get() && !entity.isInvisible())?
+        return (!InvisibilityCheck.check(entity) && !entity.isInvisible()) || !GSCommonConfig.INVISIBILITY_ARMOR.get()?
                 (isLeggings?"gsuit:textures/models/armor/ghillie_layer_2.png":
                         "gsuit:textures/models/armor/ghillie_layer_1.png")
                 : "gsuit:textures/models/armor/invisible_layer.png";
